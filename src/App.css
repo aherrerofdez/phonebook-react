@@ -23,6 +23,12 @@
   margin-right: 10px;
 }
 
+.hint {
+  font-size: 12pt;
+  width: 150px;
+  height: 20px;
+}
+
 .grid {
   margin-top: 10px;
   margin-left: 10px;
@@ -37,8 +43,13 @@
 
 .label-r {
   display: inline-block;
-  width: 60px;
+  width: 70px;
   margin-right: 10px;
+}
+
+.align {
+  display: inline-block;
+  vertical-align: sub;
 }
 
 .center {
@@ -48,8 +59,8 @@
 }
 
 .button {
-  height: 45px;
-  width: 90px;
+  height: 55px;
+  width: 95px;
   font-size: 11pt;
   color: white;
   background-color: #28A745;
@@ -66,6 +77,10 @@
 
 .margin-l {
   margin-left: 10px;
+}
+
+.text {
+  font-size: 14pt;
 }
 
 .list {

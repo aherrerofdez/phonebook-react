@@ -81,8 +81,9 @@ function App() {
         <h2>Phonebook</h2>
       </div>
       <div className='search'>
-        <label className='label-l'> Search: </label>
-        <input placeholder='Search for contacts'
+        <label className='label-l text'> Search: </label>
+        <input className='hint'
+               placeholder='Search for contacts'
                value={search}
                onChange={handleFilter} />
       </div>
@@ -91,33 +92,35 @@ function App() {
         <div className='grid'>
           <div>
             <div className='col'>
-              <label className='label-r'> Name: </label>
-              <input placeholder='New contact name'
+              <label className='label-r text'> Name: </label>
+              <input className='hint'
+                     placeholder='New contact name'
                      value={newName}
                      onChange={handleContactChange} />
             </div>
             <div className='col'>
-              <label className='label-r'> Phone number: </label>
-              <input placeholder='New phone number'
+              <label className='label-r text align'> Phone number: </label>
+              <input className='hint'
+                     placeholder='New phone number'
                      value={newNumber}
                      onChange={handleNumberChange} />
             </div>
           </div>
           <div className='col center'>
-            <button className='button' type='submit'> Add Contact </button>
+            <button className='button text' type='submit'> Add Contact </button>
           </div>
         </div>    
         <div>
           <h2 className='margin-l'> Contacts </h2>
         </div>
         <div>
-          <p className='margin-l'><b>{people.length}</b> contacts in the phonebook</p>
+          <p className='margin-l text'><b>{people.length}</b> contacts in the phonebook</p>
         </div>
         <div>
           <ul className='list'>
             {filterNames(people, search).map(
               elem =>
-                <li className='grid item' key={elem.id}>
+                <li className='grid item text' key={elem.id}>
                   <div className='col'>{elem.name}</div>
                   <div className='col center'>{elem.number}</div>
                 </li>
